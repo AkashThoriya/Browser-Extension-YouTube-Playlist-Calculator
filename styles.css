@@ -1,0 +1,212 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #333; 
+}
+
+.container {
+    width: 280px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 19px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #2C3E50; 
+    padding-bottom: 15px;
+}
+
+.duration-box {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    color: #333; 
+    font-size: 18px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    transition: box-shadow 0.3s, transform 0.3s; 
+}
+
+.duration-box:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px); 
+}
+
+.error-message {
+    color: #e74c3c; 
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.duration-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.duration-part {
+    margin: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.duration-value {
+    font-size: 24px;
+    color: #3498DB; /* A vibrant shade of blue that complements the light gray and white background */
+    margin-bottom: 5px;
+}
+
+.duration-label {
+    font-size: 14px;
+    color: #5A6A6F; /* A muted shade of steel gray that is legible against the light gray background */
+}
+
+.input-box {
+    margin-top: 20px;
+    background-color: #ffffff; /* Pure white */
+    padding: 20px; /* Reduced padding for a more compact look */
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    transition: box-shadow 0.3s, transform 0.3s; 
+}
+
+.input-box:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px); 
+}
+
+#dailyTime:focus {
+    outline: none; /* Remove browser default outline */
+    border-color: #3498db; /* Blue border on focus */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 5px rgba(52, 152, 219, 0.5); /* Inner shadow and blue outer glow */
+}
+
+.timetable-labels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.daily-time-label {
+    font-size: 18px; /* Adjusts the font size */
+    color: #333; /* Dark text color */
+    font-weight: 600;
+}
+
+.daily-time-label-info {
+    font-size: 14px; /* Adjusts the font size */
+    color: #5A6A6F; /* Dark text color */
+    font-weight: 500;
+}
+
+.input-actions {
+    display: flex;
+    align-items: center; /* Vertically centers the input and button */
+    justify-content: center;
+    gap: 15px;
+}
+
+#dailyTime {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 15px; /* Adjusted height to match the button */
+    width: 118px;
+    padding: 10px;
+}
+
+#dailyTime:focus {
+    outline: none !important;
+    box-shadow: 0 0 6px #ccc;
+}
+
+#generateTimetable, button {
+    padding: 6px 14px; /* Adjusted padding for a more balanced look */
+    background-color: #3498DB; /* A vibrant shade of blue */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    height: 36px; /* Adjusted height to match the input */
+    font-size: 16px;
+}
+
+#generateTimetable:hover, button:hover {
+    background-color: #2980B9; /* A slightly darker shade for hover */
+}
+
+.timetable-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ffffff; /* Pure white */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+.timetable-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Timetable Styles */
+.day-card {
+    background-color: #f9f9f9; 
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 25px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s, transform 0.3s; 
+}
+
+.day-card:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px); 
+}
+
+.day-card h2 {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.day-card p {
+    font-size: 14px;
+    color: #777;
+    margin-left: 10px; 
+    padding: 8px 0;
+    transition: background-color 0.3s;
+}
+
+
+.timetable-duration-value {
+    color: #3498db;
+    font-weight: bold;
+}
+
+/* Highlight the Continue video */
+.continue-video {
+    font-weight: bold;
+}
+
+/* Styling for the video duration */
+.timetable-duration-wrapper {
+    font-weight: bold;
+    color: #3498db;  /* Blue shade */
+}
+
+.print-timetable-container {
+    margin-top: 20px;
+}

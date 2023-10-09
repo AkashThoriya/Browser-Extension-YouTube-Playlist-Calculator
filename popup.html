@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Playlist Duration</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="popup.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Playlist Duration</h1>
+        <div id="duration" class="duration-box">
+            Calculating...
+        </div>
+        <div class="input-box playlist-timetable" style="display: none;">
+            <div class="timetable-labels">
+                <label class="daily-time-label" for="dailyTime">Generate Timetable</label>
+                <label class="daily-time-label-info">Time per day (in minutes)</label>
+            </div>
+            <div class="input-actions">
+                <input type="number" id="dailyTime" min="1" placeholder="Enter minutes">
+                <button id="generateTimetable">Generate</button>
+            </div>
+        </div>
+        <div id="timetable" class="timetable-box" style="display: none;"></div>
+        <div class="duration-box print-timetable-container" style="display: none;">
+            <button id="printTimetable">Export Timetable</button>
+        </div>
+    </div>
+</body>
+</html>
