@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "YouTube Playlist Duration and Timetable Calculator",
+  "name": "YouTube Playlist Duration and Timetable Calc",
   "version": "1.0",
-  "permissions": ["scripting", "activeTab", "storage", "tabs"],
+  "permissions": ["scripting", "activeTab", "tabs"],
   "host_permissions": ["*://www.youtube.com/*"],
   "action": {
     "default_popup": "popup.html"
